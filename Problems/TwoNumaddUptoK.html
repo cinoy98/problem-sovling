@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+    For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+    <script>
+        var array=[10,5,3,7];
+        var k = 17;
+        function addUptoK(k,array){
+            for(var i=0 ; i< array.length ; i++){
+                for(var j=0;j<array.length;j++){
+                    if((i!=j)&&(array[i]+array[j])==k){
+                        console.log(array[i],array[j]);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

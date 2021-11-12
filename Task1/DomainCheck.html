@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var domain= window.prompt("enter the domain address");
+	CheckDomain(domain);
+	function CheckDomain(domain)
+		{
+			var Validdomain = /[A-Za-z0-9-]+\.[A-Za-z]+/g;
+			//var Validdomain =/^[a-zA-Z0-9-]+.[A-Za-z]$/;
+			if((Validdomain).test(domain)==true)
+			{
+				alert("valid domain");
+
+			}
+			else
+				{alert("invalid domain");}
+		}
+</script>
+</body>
+</html>

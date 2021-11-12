@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var n=window.prompt("enter number of items");
+var array=[];
+for(i=0;i<n;i++)
+	{
+		array[i]=window.prompt("enter the number");
+	}	
+document.write("Even numbers using filter are : "+array.filter(function(array)
+	{
+		return array %2 == 0;
+	}));
+document.write("</br> Odd numbers using filter are : "+array.filter(function(array)
+	{
+		return array %2 != 0;
+	}));
+document.write("</br> Even numbers using foreach are : ")
+array.forEach(function(arr)
+	{
+		  if(arr %2 == 0)
+  	{
+  		document.write(arr+" ");
+  	}
+	});
+document.write("</br> Odd numbers using foreach are : ")
+array.forEach(function(arr)
+	{
+		  if(arr %2 != 0)
+  	{
+  		document.write(arr+" ");
+  	}
+	});
+document.write("</br> Even numbers using Map are : ")
+var newarray=array.map(function(arr)
+	{
+	if(arr %2 == 0)
+		{
+		document.write(arr+" ");
+		return arr;
+		}
+  	}
+	);
+document.write("</br> odd numbers using Map are : ")
+var newarray2=array.map(function(arr2)
+	{
+	if(arr2 %2 != 0)
+		{
+		document.write(arr2+" ")
+		return arr2;
+		}
+  	}
+	);
+document.write("</br> Even numbers using reduce are : ")
+var a=array.reduce(function(check,element)
+	{
+		if(element%2==0)
+		{	
+			check=element;
+			document.write(check+" ");
+		}
+	});
+document.write("</br> Odd numbers using reduce are : ")
+var b=array.reduce(function(check,element)
+	{
+		if(element%2!=0)
+		{	
+			check=element;
+			document.write(check+" ");
+		}
+	});
+</script>
+</body>
+</html>

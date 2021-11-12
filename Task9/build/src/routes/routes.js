@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.routes = void 0;
+var express_1 = __importDefault(require("express"));
+var routes = express_1.default.Router();
+exports.routes = routes;
+var athenticate_1 = require("../middlewares/athenticate");
+var editController_1 = require("../controllers/editController");
+var forgotController_1 = require("../controllers/forgotController");
+var loginController_1 = require("../controllers/loginController");
+var signupController_1 = require("../controllers/signupController");
+var viewController_1 = require("../controllers/viewController");
+var logoutController_1 = require("../controllers/logoutController");
+routes.post("/signup", signupController_1.Signup);
+routes.post("/login", loginController_1.Login);
+routes.put("/forgot", forgotController_1.Forgot);
+routes.get("/view", athenticate_1.authenticateToken, viewController_1.View);
+routes.put("/edit", athenticate_1.authenticateToken, editController_1.Edit);
+routes.get('/logout', logoutController_1.Logout);

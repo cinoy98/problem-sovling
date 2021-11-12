@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var student=[{name:'Rojith',roll:45},{name:'Cinoy',roll:62},{name:'Rohith',roll:32},{name:'Rifadh',roll:50},{name:'Aswin',roll:10}];
+	var temp={name:"",roll:""};
+	n=student.length;
+	document.write("Before sorting:"+"</br>")	
+	for(i=0;i<n;i++)
+		document.write("Name= "+student[i].name+ ", Roll no.= " + student[i].roll+"</br>");	
+	Sort_Ascending(student);
+	Sort_Descending(student);
+	function Sort_Ascending(student) 
+	{
+		for(var i=0;i<n;i++)
+		{
+		for(var j=0;j<n-i-1;j++)
+			{
+			if(student[j].roll>student[j+1].roll)
+				{
+				temp=student[j];
+				student[j]=student[j+1];
+				student[j+1]=temp;
+				}
+			}	
+		}
+		document.write("</br>"+"After sorting in Ascending order:"+"</br>")
+		for(i=0;i<n;i++)
+		document.write("Name= "+student[i].name+ ", Roll no.= " + student[i].roll+"</br>");	
+	}	
+	function Sort_Descending(student) 
+	{
+		for(var i=0;i<n;i++)
+		{
+		for(var j=0;j<n-i-1;j++)
+			{
+			if(student[j].roll<student[j+1].roll)
+				{
+				temp=student[j];
+				student[j]=student[j+1];
+				student[j+1]=temp;
+				}
+			}	
+		}
+	document.write("</br>"+"After sorting in descending order:"+"</br>")	
+	for(i=0;i<n;i++)
+		document.write("Name= "+student[i].name+ ", Roll no.= " + student[i].roll+"</br>");	
+	}	
+</script>
+</body>
+</html>

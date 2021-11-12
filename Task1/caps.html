@@ -1,0 +1,22 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function capitalize(str) {
+   var stringparts = str.split(' ');
+   for (var i = 0; i < stringparts.length; i++) {
+       var c=stringparts[i].charCodeAt(0)-32
+       var x=String.fromCharCode(c)
+       stringparts[i] = x + stringparts[i].substring(1);     
+   }
+   return stringparts.join(' '); 
+}
+var enter=window.prompt("enter a string")
+var result=capitalize(enter);
+document.write(result);
+</script>
+</body>
+</html>

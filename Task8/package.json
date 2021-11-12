@@ -1,0 +1,20 @@
+{
+  "name": "loginmodule",
+  "version": "1.0.0",
+  "description": "User Login, User signup, Forgot password, View and edit personal details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Cinoy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "uuidv4": "^6.2.6"
+  }
+}

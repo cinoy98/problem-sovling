@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function factorial(x){
+		if(x==0){
+			return 1;
+		}
+		else{
+			return x * factorial(x-1);
+		}
+	}
+	var y=window.prompt('enter a positive number');
+	document.write("The input integer is "+y+"</br>")
+	var result=factorial(y)
+	document.write("factorial of "+y+" is "+result);
+	
+</script>
+</body>
+</html>

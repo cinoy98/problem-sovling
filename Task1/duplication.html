@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var n=window.prompt("enter number of elements");
+	var array=[];
+	for(var i=0;i<n;i++)
+	{
+		array[i]=window.prompt("enter elements");
+	}
+    var newarray = []; 
+    function duplicate(array) 
+    	{ 
+         var newarray = array.filter(function(element,index,arr) 
+            { 
+                return index == arr.indexOf(element); 
+            }); 
+              
+            return newarray; 
+        } 
+          
+        document.write(duplicate(array)); 
+</script>
+</body>
+</html>

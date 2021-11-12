@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var date1 = new Date(window.prompt("enter in yyyy/mm/dd"));
+	var date2 = new Date(window.prompt("enter in yyyy/mm/dd"));
+	difference(date1,date2);
+	function difference(date1,date2){
+		var TimeDifference = date2.getTime() - date1.getTime();
+		var DayDifference = TimeDifference / (1000 * 3600 * 24);
+		document.write(DayDifference);
+	}
+</script>
+</body>
+</html>

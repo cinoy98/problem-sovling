@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    var email= window.prompt("enter the email address");
+    CheckEmail(email);
+    function CheckEmail(email)
+        {
+            var ValidMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+.(.[a-z]+)*$/;
+            if(email.match(ValidMail))
+            {
+                alert("valid email");
+
+            }
+            else
+                {alert("invalid email");}
+        }
+</script>
+</body>
+</html>

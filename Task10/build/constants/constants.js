@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ValidStatus = exports.ValidGender = exports.ValidMail = exports.url = exports.Secret = void 0;
+var Secret = "top_secret";
+exports.Secret = Secret;
+var url = "mongodb://localhost/cinoy";
+exports.url = url;
+var ValidMail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+.(.[a-z]+)*$/;
+exports.ValidMail = ValidMail;
+var ValidGender = /^(?:m|M|male|Male|f|F|female|Female)$/;
+exports.ValidGender = ValidGender;
+var ValidStatus = /^(?:married|single)$/;
+exports.ValidStatus = ValidStatus;

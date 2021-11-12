@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var x=parseInt(window.prompt("enter a number"));
+	document.write("Input price is : "+x);
+	var y=x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+	document.write("</br> Comma saperated price is : " +y);
+</script>
+</body>
+</html>

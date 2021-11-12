@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	Student = new Object()
+	Student.name="David Rayy";
+	Student.sclass="VI";
+	Student.rollno=12;
+	document.write("before changing= keys :" + Object.keys(Student));
+	document.write("</br> Values : " + Object.values(Student));
+	var a=Object.keys(Student);
+	var b=Object.values(Student);
+	newStudent=new Object();
+	for (var i = 0; i <a.length; i++) 
+		{
+		newStudent[b[i]]=a[i];
+		}
+	document.write("</br> after changing = keys : "+ Object.keys(newStudent));
+	document.write("</br> values : " + Object.values(newStudent));
+</script>
+</body>
+</html>
